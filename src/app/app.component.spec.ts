@@ -22,7 +22,7 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-pet-store')
   })
 
-  it('render app-header', async(() => {
+  it('should render app-header', async(() => {
       const fixture = TestBed.createComponent(AppComponent)
       fixture.whenStable().then(() => {
         fixture.detectChanges()
