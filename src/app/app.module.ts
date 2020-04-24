@@ -14,17 +14,10 @@ import {RoutingModule} from './routing/routing.module';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {FlexLayoutModule} from "@angular/flex-layout";
-import { DogsComponent } from './dogs/dogs.component';
+import {DogsComponent} from './dogs/dogs.component';
 
 
 @NgModule({
-  exports: [
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatMenuModule,
-    MatToolbarModule,
-    FlexLayoutModule
-  ],
   declarations: [
     AppComponent,
     InventoryComponent,
@@ -39,6 +32,11 @@ import { DogsComponent } from './dogs/dogs.component';
     BrowserAnimationsModule,
     RoutingModule,
     MatIconModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatToolbarModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
