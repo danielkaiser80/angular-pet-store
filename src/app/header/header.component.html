@@ -1,8 +1,14 @@
-
-<div class="basic-container">
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item [routerLink]="['/']">Pet Store</button>
-  <button mat-menu-item>Dogs</button>
-</mat-menu>
+<div style="background-color: darkblue; ">
+  <mat-toolbar color="accent">
+    <div fxFlex fxLayout fxLayoutAlign="start" fxHide.xs>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <li>
+          <a routerLink="/inventory">Inventory</a>
+        </li>
+        <li>
+          <a routerLink="/dogs">Dogs</a>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar>
 </div>
