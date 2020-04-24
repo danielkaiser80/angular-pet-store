@@ -1,5 +1,8 @@
-<a [routerLink]="['/']">
-  <h1>Pet Store</h1>
-</a>
 
-<a class="button fancy-button"><em class="material-icons">search</em>...</a>
+<div class="basic-container">
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/']">Pet Store</button>
+  <button mat-menu-item>Dogs</button>
+</mat-menu>
+</div>
