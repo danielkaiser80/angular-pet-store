@@ -14,6 +14,7 @@ import {RoutingModule} from './routing/routing.module';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { DogsComponent } from './dogs/dogs.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {FlexLayoutModule} from "@angular/flex-layout";
   declarations: [
     AppComponent,
     InventoryComponent,
-    HeaderComponent
+    HeaderComponent,
+    DogsComponent
   ],
   imports: [
     BrowserModule,
