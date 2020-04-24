@@ -11,6 +11,7 @@ import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatMenuModule} from '@angular/material/menu';
+import { RoutingModule } from './routing/routing.module';
 
 
 @NgModule({
@@ -30,9 +31,7 @@ import {MatMenuModule} from '@angular/material/menu';
     FormsModule,
     NgxChartsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot([
-      {path: '', component: InventoryComponent},
-    ]),
+    RoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
