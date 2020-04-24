@@ -1,10 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { InventoryComponent } from './inventory/inventory.component';
-import { HeaderComponent } from './header/header.component';
+import {AppComponent} from './app.component';
+import {InventoryComponent} from './inventory/inventory.component';
+import {HeaderComponent} from './header/header.component';
 import {RouterModule} from "@angular/router";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,9 +17,16 @@ import {RouterModule} from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    BrowserModule,
+    FormsModule,
+    NgxChartsModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      {path: '', component: InventoryComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
