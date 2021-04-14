@@ -3,11 +3,13 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {InventoryComponent} from "../inventory/inventory.component";
 import {DogsComponent} from "../dogs/dogs.component";
+import {TodoListComponent} from "../todolist/todolist.component";
 
 
 const routes: Routes = [
   {path: 'inventory', component: InventoryComponent},
   {path: 'dogs', component: DogsComponent},
+  {path: 'todo', component: TodoListComponent},
   {path: '', redirectTo: '/inventory', pathMatch: 'full'}
 ];
 

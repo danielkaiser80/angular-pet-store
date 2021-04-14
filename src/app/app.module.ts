@@ -15,6 +15,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {DogsComponent} from './dogs/dogs.component';
+import {TodoListComponent} from "./todolist/todolist.component";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {DogsComponent} from './dogs/dogs.component';
     AppComponent,
     InventoryComponent,
     HeaderComponent,
-    DogsComponent
+    DogsComponent,
+    TodoListComponent,
   ],
   imports: [
     BrowserModule,
