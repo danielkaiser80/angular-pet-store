@@ -1,16 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { InventoryComponent } from './inventory.component';
+import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import {InventoryComponent} from './inventory.component';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 describe('InventoryComponent', () => {
   let component: InventoryComponent;
   let fixture: ComponentFixture<InventoryComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ InventoryComponent ]
-    })
-    .compileComponents();
+      declarations: [InventoryComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
