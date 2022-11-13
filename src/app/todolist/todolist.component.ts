@@ -15,9 +15,8 @@ export class TodoListComponent {
   public items: Array<TodoItem> = [];
   public taskCounter = 0;
 
-  private getRemainingCount() {
-    return this.items.filter((item) => !item.isDone).length;
-  }
+  private getRemainingCount = () =>
+    this.items.filter(({ isDone }) => !isDone).length;
 
   public add() {
     if (!this.name) {
