@@ -7,7 +7,7 @@ class TodoItem {
 }
 
 @Component({
-  selector: 'todo-list',
+  selector: 'app-todo-list',
   template: `<input id="name" type="text" name="name" [(ngModel)]="name">
   <button (click)="add()">Add</button>
   <ul>
