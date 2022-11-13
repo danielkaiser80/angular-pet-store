@@ -9,7 +9,7 @@ import {DataPoint, single} from '../data';
 })
 export class InventoryComponent {
 
-  view: any[] = [700, 400];
+  view: number[] = [700, 400];
 
   // options
   gradient: boolean = true;
@@ -22,21 +22,21 @@ export class InventoryComponent {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
 
-  single: DataPoint;
+  single: DataPoint | undefined;
 
   constructor() {
     Object.assign(this, {single});
   }
 
-  onSelect(data): void {
+  onSelect(data: any): void {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
   }
 
-  onActivate(data): void {
+  onActivate(data: any): void {
     console.log('Activate', JSON.parse(JSON.stringify(data)));
   }
 
-  onDeactivate(data): void {
+  onDeactivate(data: any): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 }

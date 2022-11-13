@@ -1,19 +1,16 @@
-const {pathsToModuleNameMapper} = require('ts-jest/utils');
-// load all settings from the TypeScript configuration
-const {compilerOptions} = require('./tsconfig.app.json');
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { paths } = require('./tsconfig.json').compilerOptions;
 
+// eslint-disable-next-line no-undef
+globalThis.ngJest = {
+  skipNgcc: false,
+  tsconfig: 'tsconfig.spec.json',
+};
+
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: 'jest-preset-angular', // load the adapter
-  globals: {
-    'ts-jest': {
-      allowSyntheticDefaultImports: true,
-    },
-  },
-  roots: ['./src/'], // start searching for files from root
-  testMatch: ['**/+(*.)+(spec).+(ts|js)'], // test file extensions
-  setupFilesAfterEnv: ['./src/window-mock.ts'], // setup env file
-  collectCoverage: true, // code coverage
-  coverageReporters: ['html'], // generate the report in HTML
-  coverageDirectory: 'coverage/my-ng-app', // folder for coverage
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions && compilerOptions.paths || {}, {prefix: '/'})
+  preset: 'jest-preset-angular',
+  globalSetup: 'jest-preset-angular/global-setup',
+  moduleNameMapper: pathsToModuleNameMapper(paths, { prefix: '<rootDir>' }),
+  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
 };
