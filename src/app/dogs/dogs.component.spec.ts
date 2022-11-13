@@ -8,8 +8,9 @@ describe('DogsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DogsComponent ]
-    })
+    declarations: [DogsComponent],
+    teardown: { destroyAfterEach: false }
+})
     .compileComponents();
   }));
 
