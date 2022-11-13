@@ -13,7 +13,6 @@ import { MatMenuModule } from "@angular/material/menu";
 import { RoutingModule } from "./routing/routing.module";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
-import { FlexLayoutModule } from "@angular/flex-layout";
 import { DogsComponent } from "./dogs/dogs.component";
 import { TodoListComponent } from "./todolist/todolist.component";
 
@@ -37,7 +36,6 @@ import { TodoListComponent } from "./todolist/todolist.component";
     MatButtonToggleModule,
     MatMenuModule,
     MatToolbarModule,
-    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
