@@ -200,17 +200,6 @@
     "@angular-eslint/utils" "12.7.0"
     "@typescript-eslint/experimental-utils" "4.28.2"
 
-"@angular-eslint/schematics@12.7.0":
-  version "12.7.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/schematics/-/schematics-12.7.0.tgz#0ee020eeb7d633a808b4f869b378db15c1cb49ed"
-  integrity sha512-qt5OiCk5kTr+l8XG+WJxLhwvZMT5MWPBCK/rknCpIEd4z2HkOK24Cttuj3jdOYJ3abQ0ha4SiIne5LkrEZBoLw==
-  dependencies:
-    "@angular-eslint/eslint-plugin" "12.7.0"
-    "@angular-eslint/eslint-plugin-template" "12.7.0"
-    ignore "5.1.9"
-    strip-json-comments "3.1.1"
-    tmp "0.2.1"
-
 "@angular-eslint/template-parser@12.7.0":
   version "12.7.0"
   resolved "https://registry.yarnpkg.com/@angular-eslint/template-parser/-/template-parser-12.7.0.tgz#a91f23ea6d3fcefb24cc9e1be8a4df78c27addc7"
@@ -5450,11 +5439,6 @@ ignore-walk@^4.0.1:
   dependencies:
     minimatch "^3.0.4"
 
-ignore@5.1.9:
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
-  integrity sha512-2zeMQpbKz5dhZ9IwL0gbxSW5w0NK/MSAMtNuhgIHEPmaU3vPdKPL0UdvUCXs5SS4JAwsBxysK5sFMW8ocFiVjQ==
-
 ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.npmjs.org/ignore/-/ignore-4.0.6.tgz"
@@ -9455,7 +9439,7 @@ strip-final-newline@^2.0.0:
   resolved "https://registry.npmjs.org/strip-final-newline/-/strip-final-newline-2.0.0.tgz"
   integrity sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==
 
-strip-json-comments@3.1.1, strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
+strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
@@ -9685,19 +9669,19 @@ thunky@^1.0.2:
   resolved "https://registry.npmjs.org/thunky/-/thunky-1.1.0.tgz"
   integrity sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==
 
-tmp@0.2.1, tmp@~0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.1.tgz#8457fc3037dcf4719c251367a1af6500ee1ccf14"
-  integrity sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==
-  dependencies:
-    rimraf "^3.0.0"
-
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.npmjs.org/tmp/-/tmp-0.0.33.tgz"
   integrity sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==
   dependencies:
     os-tmpdir "~1.0.2"
+
+tmp@~0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.1.tgz#8457fc3037dcf4719c251367a1af6500ee1ccf14"
+  integrity sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==
+  dependencies:
+    rimraf "^3.0.0"
 
 tmpl@1.0.5:
   version "1.0.5"
