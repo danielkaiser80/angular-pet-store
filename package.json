@@ -38,6 +38,8 @@
     "@angular/cli": "~13.3.9",
     "@angular/compiler-cli": "~13.3.11",
     "@angular/language-service": "~13.3.11",
+    "@types/d3-scale": "^4.0.2",
+    "@types/d3-selection": "^3.0.3",
     "@types/jest": "^29.2.2",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "4.28.2",

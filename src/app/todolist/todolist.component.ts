@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 
-class TodoItem {
+interface TodoItem {
   isDone: boolean;
   name: string;
 }

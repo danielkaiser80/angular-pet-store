@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {DataPoint, single} from '../data';
+import {Color, LegendPosition, ScaleType} from '@swimlane/ngx-charts';
 
 
 @Component({
@@ -12,13 +13,16 @@ export class InventoryComponent {
   view: number[] = [700, 400];
 
   // options
-  gradient: boolean = true;
-  showLegend: boolean = true;
-  showLabels: boolean = true;
-  isDoughnut: boolean = false;
-  legendPosition: string = 'below';
+  gradient = true;
+  showLegend = true;
+  showLabels = true;
+  isDoughnut = false;
+  legendPosition = LegendPosition.Below;
 
-  colorScheme = {
+  colorScheme: Color = {
+    group: ScaleType.Ordinal,
+    name: 'default',
+    selectable: true,
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
 
