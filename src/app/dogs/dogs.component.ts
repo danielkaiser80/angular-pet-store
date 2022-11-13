@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-dogs',
-  templateUrl: './dogs.component.html',
-  styleUrls: ['./dogs.component.scss']
+  selector: "app-dogs",
+  templateUrl: "./dogs.component.html",
+  styleUrls: ["./dogs.component.scss"],
 })
-export class DogsComponent  {
-
-  constructor() { }
-
+export class DogsComponent {
+  constructor() {}
 }

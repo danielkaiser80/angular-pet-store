@@ -1,17 +1,17 @@
-import {waitForAsync, ComponentFixture, TestBed} from '@angular/core/testing';
-import {HeaderComponent} from './header.component';
-import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { waitForAsync, ComponentFixture, TestBed } from "@angular/core/testing";
+import { HeaderComponent } from "./header.component";
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 
-describe('HeaderComponent', () => {
+describe("HeaderComponent", () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-    declarations: [HeaderComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    teardown: { destroyAfterEach: false }
-}).compileComponents();
+      declarations: [HeaderComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -20,7 +20,7 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

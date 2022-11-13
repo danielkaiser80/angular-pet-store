@@ -1,17 +1,16 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 
-import { DogsComponent } from './dogs.component';
+import { DogsComponent } from "./dogs.component";
 
-describe('DogsComponent', () => {
+describe("DogsComponent", () => {
   let component: DogsComponent;
   let fixture: ComponentFixture<DogsComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-    declarations: [DogsComponent],
-    teardown: { destroyAfterEach: false }
-})
-    .compileComponents();
+      declarations: [DogsComponent],
+      teardown: { destroyAfterEach: false },
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -20,7 +19,7 @@ describe('DogsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
