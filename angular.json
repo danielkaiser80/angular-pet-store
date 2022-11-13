@@ -66,20 +66,24 @@
                   "maximumError": "10kb"
                 }
               ]
-            }
+            },
+            "development": {}
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-pet-store:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "angular-pet-store:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-pet-store:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -119,14 +123,17 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-pet-store:serve"
+            "protractorConfig": "e2e/protractor.conf.js"
           },
           "configurations": {
             "production": {
               "devServerTarget": "angular-pet-store:serve:production"
+            },
+            "development": {
+              "devServerTarget": "angular-pet-store:serve:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }},
