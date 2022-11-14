@@ -2711,9 +2711,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swimlane/ngx-charts@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "@swimlane/ngx-charts@npm:19.2.0"
+"@swimlane/ngx-charts@npm:^20.1.0":
+  version: 20.1.0
+  resolution: "@swimlane/ngx-charts@npm:20.1.0"
   dependencies:
     "@types/d3-shape": ^2.0.0
     d3-array: ^2.9.1
@@ -2736,8 +2736,8 @@ __metadata:
     "@angular/forms": ">=12.0.0"
     "@angular/platform-browser": ">=12.0.0"
     "@angular/platform-browser-dynamic": ">=12.0.0"
-    rxjs: 6.x
-  checksum: bef8b7e5225a16f5aa40bc0c1a1259963143b3b1b1d8da8c4c2e89b536c2b47cd50f67710cdf6fa0470bd618191804c88b0d239b7366b8a5037d7f3a34a225ff
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 7f4ce8c86f4a4c3679f7455f6f1081a926e1fc45bf244f4665649d007ab7c1e972fac25a5eee1d0d83aca5d213dafd8d6c1e3853975ad13dbf1cfa162e0cd7ed
   languageName: node
   linkType: hard
 
@@ -3800,7 +3800,7 @@ __metadata:
     "@angular/platform-browser": ~13.3.11
     "@angular/platform-browser-dynamic": ~13.3.11
     "@angular/router": ~13.3.11
-    "@swimlane/ngx-charts": ^19.2.0
+    "@swimlane/ngx-charts": ^20.1.0
     "@types/d3-scale": ^4.0.2
     "@types/d3-selection": ^3.0.3
     "@types/jest": ^29.2.2
@@ -5149,9 +5149,9 @@ __metadata:
   linkType: hard
 
 "d3-color@npm:1 - 2, d3-color@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "d3-color@npm:2.0.0"
-  checksum: b887354aa383937abd04fbffed3e26e5d6a788472cd3737fb10735930e427763e69fe93398663bccf88c0b53ee3e638ac6fcf0c02226b00ed9e4327c2dfbf3dc
+  version: 3.1.0
+  resolution: "d3-color@npm:3.1.0"
+  checksum: 4931fbfda5d7c4b5cfa283a13c91a954f86e3b69d75ce588d06cde6c3628cebfc3af2069ccf225e982e8987c612aa7948b3932163ce15eb3c11cd7c003f3ee3b
   languageName: node
   linkType: hard
 
