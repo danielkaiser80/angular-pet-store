@@ -11,6 +11,9 @@ globalThis.ngJest = {
 module.exports = {
   preset: "jest-preset-angular",
   globalSetup: "jest-preset-angular/global-setup",
-  moduleNameMapper: pathsToModuleNameMapper(paths, { prefix: "<rootDir>" }),
+  moduleNameMapper: {
+    ...pathsToModuleNameMapper(paths, { prefix: "<rootDir>" }),
+    "^d3-color$": "<rootDir>/node_modules/d3-color/dist/d3-color.min.js",
+  },
   setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
 };
