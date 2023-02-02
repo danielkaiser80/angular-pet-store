@@ -1,5 +1,3 @@
-import { jest } from "@jest/globals";
-
 Object.defineProperty(window, "CSS", { value: null });
 
 Object.defineProperty(document, "doctype", {
