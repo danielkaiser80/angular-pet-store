@@ -430,19 +430,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/material-moment-adapter@npm:^15.2.9":
-  version: 15.2.9
-  resolution: "@angular/material-moment-adapter@npm:15.2.9"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/core": ^15.0.0 || ^16.0.0
-    "@angular/material": 15.2.9
-    moment: ^2.18.1
-  checksum: d4dd9caa023d623012cf2783f58a9047a682fc9d5312585c9ba85a270d1ccf17a6153a7eb1f7df3d136eb94f99ad3e75ecf8625eb63783eecdf31cf02c143686
-  languageName: node
-  linkType: hard
-
 "@angular/material@npm:^15.2.9":
   version: 15.2.9
   resolution: "@angular/material@npm:15.2.9"
@@ -5367,7 +5354,6 @@ __metadata:
     "@angular/forms": "npm:~15.2.10"
     "@angular/language-service": "npm:~15.2.10"
     "@angular/material": "npm:^15.2.9"
-    "@angular/material-moment-adapter": "npm:^15.2.9"
     "@angular/platform-browser": "npm:~15.2.10"
     "@angular/platform-browser-dynamic": "npm:~15.2.10"
     "@angular/router": "npm:~15.2.10"
@@ -5387,7 +5373,6 @@ __metadata:
     eslint-plugin-angular: "npm:^4.1.0"
     jest: "npm:^29.7.0"
     jest-preset-angular: "npm:^13.1.4"
-    moment: "npm:^2.29.4"
     prettier: "npm:2.8.8"
     rxjs: "npm:~7.8.1"
     ts-jest: "npm:^29.1.1"
@@ -10893,13 +10878,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: d71b8dcd4b5af2fe13ecf3bd24070263489404fe216488c5ba7e38ece1f54daf219e72a833a3a2dc404331e870e9f44963a33399589490956bff003a3404d3b2
-  languageName: node
-  linkType: hard
-
-"moment@npm:^2.29.4":
-  version: 2.29.4
-  resolution: "moment@npm:2.29.4"
-  checksum: 157c5af5a0ba8196e577bc67feb583303191d21ba1f7f2af30b3b40d4c63a64d505ba402be2a1454832082fac6be69db1e0d186c3279dae191e6634b0c33705c
   languageName: node
   linkType: hard
 
