@@ -2,6 +2,10 @@
   text-decoration: line-through;
 }
 
+.card {
+  max-width: 300px;
+}
+
 label {
   display: block;
   font: 1rem 'Fira Sans', sans-serif;
@@ -15,4 +19,17 @@ label {
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+
+h3 {
+  margin: 0;
+}
+
+.mat-mdc-card {
+  --mdc-elevated-card-container-color: #eee
+}
+
+.task-counter {
+  margin: 15px;
+  display: block;
 }
