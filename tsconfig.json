@@ -16,10 +16,8 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "target": "es2017",
-    "module": "es2020",
+    "target": "es2020",
+    "module": "ESNext",
     "lib": ["es2020", "dom"],
     "paths": {
       "@shared/*": ["src/app/shared/*"]

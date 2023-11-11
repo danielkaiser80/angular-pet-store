@@ -1,19 +1,25 @@
 const { pathsToModuleNameMapper } = require("ts-jest");
 const { paths } = require("./tsconfig.json").compilerOptions;
+const { moduleMappings } = require('./create-d3-moduleMappings');
 
-// eslint-disable-next-line no-undef
-globalThis.ngJest = {
-  skipNgcc: false,
-  tsconfig: "tsconfig.spec.json",
+const moduleNameMapper = {
+  ...pathsToModuleNameMapper(paths, { prefix: "<rootDir>" }),
+  ...moduleMappings
 };
 
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: "jest-preset-angular",
-  globalSetup: "jest-preset-angular/global-setup",
-  moduleNameMapper: {
-    ...pathsToModuleNameMapper(paths, { prefix: "<rootDir>" }),
-    "^d3-color$": "<rootDir>/node_modules/d3-color/dist/d3-color.min.js",
+  moduleNameMapper,
+  moduleFileExtensions: ['ts', 'html', 'js', 'json', 'mjs'],
+  transformIgnorePatterns: ['node_modules/(?!@angular|@ngrx|@swimlane)'],
+
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        allowSyntheticDefaultImports: true,
+      },
+    ],
+    '^.+\\.js$': 'babel-jest',
   },
-  setupFilesAfterEnv: ["<rootDir>/setup-jest.ts"],
 };
