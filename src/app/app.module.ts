@@ -17,6 +17,7 @@ import { DogsComponent } from "./dogs/dogs.component";
 import { TodoListComponent } from "./todolist/todolist.component";
 import { MatInputModule } from "@angular/material/input";
 import { MatCardModule } from "@angular/material/card";
+import { MatListModule } from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MatCardModule } from "@angular/material/card";
     MatToolbarModule,
     MatInputModule,
     MatCardModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -27,7 +27,7 @@ a:active {
 .navigation-items a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 0.75em;
   color: white;
 }
 
@@ -35,9 +35,9 @@ a:active {
   background: #1565C0;
 }
 
-
 mat-toolbar {
   border-radius: 3px;
+  background-color: darkblue;
 }
 
 @media (max-width: 959px) {
