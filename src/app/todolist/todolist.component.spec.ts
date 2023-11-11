@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { TodoListComponent } from "./todolist.component";
 import { MatCardModule } from "@angular/material/card";
+import { MatListModule } from "@angular/material/list";
 
 describe("TodoListComponent", () => {
   let component: TodoListComponent;
@@ -9,7 +10,7 @@ describe("TodoListComponent", () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [TodoListComponent],
-      imports: [MatCardModule],
+      imports: [MatCardModule, MatListModule],
     });
 
     fixture = TestBed.createComponent(TodoListComponent);

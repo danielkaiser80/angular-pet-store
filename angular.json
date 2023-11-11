@@ -130,9 +130,7 @@
       }
     }
   },
-  "defaultProject": "angular-pet-store",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics",
     "analytics": false
   }
 }
