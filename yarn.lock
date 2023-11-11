@@ -291,7 +291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/cdk@npm:^14.2.7":
+"@angular/cdk@npm:~14.2.7":
   version: 14.2.7
   resolution: "@angular/cdk@npm:14.2.7"
   dependencies:
@@ -4422,7 +4422,7 @@ __metadata:
     "@angular-eslint/eslint-plugin-template": "npm:14.4.0"
     "@angular-eslint/template-parser": "npm:14.4.0"
     "@angular/animations": "npm:~14.3.0"
-    "@angular/cdk": "npm:^14.2.7"
+    "@angular/cdk": "npm:~14.2.7"
     "@angular/cli": "npm:~14.2.13"
     "@angular/common": "npm:~14.3.0"
     "@angular/compiler": "npm:~14.3.0"
@@ -4457,7 +4457,7 @@ __metadata:
     ts-jest: "npm:^29.1.1"
     ts-node: "npm:^10.9.1"
     tslib: "npm:^2.6.2"
-    typescript: "npm:~4.6.4"
+    typescript: "npm:~4.8.4"
     zone.js: "npm:~0.11.8"
   languageName: unknown
   linkType: soft
@@ -13026,23 +13026,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~4.6.4":
-  version: 4.6.4
-  resolution: "typescript@npm:4.6.4"
+"typescript@npm:~4.8.4":
+  version: 4.8.4
+  resolution: "typescript@npm:4.8.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 330d1e128efd90d78fff3892846a3b493998f2b09a04717922a84592ba1d7ae62b0a5e48b65a312c90eba1a1bdebf26c4441c84a3c633e88484006eecd893ccb
+  checksum: f985d8dd6ae815753d61cb81e434f3a4a5796ac52e423370fca6ad11bcd188df4013d82e3ba3b88c9746745b9341390ba68f862dc9d30bac6465e0699f2a795b
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A~4.6.4#optional!builtin<compat/typescript>":
-  version: 4.6.4
-  resolution: "typescript@patch:typescript@npm%3A4.6.4#optional!builtin<compat/typescript>::version=4.6.4&hash=5d3a66"
+"typescript@patch:typescript@npm%3A~4.8.4#optional!builtin<compat/typescript>":
+  version: 4.8.4
+  resolution: "typescript@patch:typescript@npm%3A4.8.4#optional!builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e237c7cc9b91b2bef546c43f87adef848a42bac95938972f6059aa804ce2d66298d7e13676939bc737bc0a6080561af8439e83dba37c721aa0cbf67a37151bbd
+  checksum: 5d81fd8cf5152091a0c0b84ebc868de8433583072a340c4899e0fc7ad6a80314b880a1466868c9a6a1f640c3d1f2fe7f41f8c541b99d78c8b414263dfa27eba3
   languageName: node
   linkType: hard
 
