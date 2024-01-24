@@ -54,3 +54,6 @@ Thumbs.db
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# NX
+.nx/cache

@@ -8,7 +8,7 @@ import { Color, LegendPosition, ScaleType } from "@swimlane/ngx-charts";
   styleUrls: ["./inventory.component.scss"],
 })
 export class InventoryComponent {
-  view: number[] = [700, 400];
+  view: [number, number] = [700, 400];
 
   // options
   gradient = true;
